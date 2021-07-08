@@ -35,8 +35,9 @@ public class StudentRegistrationForm {
         $("#react-select-4-input").setValue("Noida").pressEnter();
         $("#submit").click();
         //Asserts
-        $(".table-responsive").shouldHave(text("Alex Pereponov"));
-        $(".table-responsive").shouldHave(text("NCR Noida"));
+        $(".table-responsive").shouldHave(
+                text("Alex Pereponov"),
+                text("NCR Noida"));
     }
 
 }
